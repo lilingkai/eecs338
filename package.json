@@ -1,23 +1,21 @@
 {
-  "name": "eecs330_final_project",
+  "name": "eecs338",
   "version": "1.0.0",
-  "description": "Larry wir4jsilefhsilef",
+  "description": "EECS 338 Design Project",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AaronLeon/eecs330_final_project.git"
+    "url": "git+https://github.com/lilingkai/eecs338.git"
   },
-  "author": "",
+  "author": "Kevin Li",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AaronLeon/eecs330_final_project/issues"
+    "url": "https://github.com/lilingkai/eecs338/issues"
   },
-  "homepage": "https://github.com/AaronLeon/eecs330_final_project#readme",
-  "dependencies": {
-    "jquery": "^3.1.1",
-    "materialize-css": "^0.98.0"
-  }
+  "homepage": "https://github.com/lilingkai/eecs338#readme"
 }
