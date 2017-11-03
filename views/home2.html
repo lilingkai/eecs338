@@ -1,9 +1,8 @@
 <head>
-    <link rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="../index.css">
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../node_modules/materialize-css/dist/js/materialize.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.js"></script>
     <script src="../js/home2.js"></script>
 </head>
 <body>
@@ -20,82 +19,23 @@
     </div>
     <div class="container">
         <div class="row center-align">
-            <h3>Current Budget</h3>
+            <h3>Current Progress</h3>
             <div class="divider"></div>
             <br></br>
+            <a href="grading.html" class="waves-effect waves-light btn">Next Paper</a>
+            <a class="waves-effect waves-light btn">Previously Graded</a>
+            <a class="waves-effect waves-light btn">Contact Professor</a>
             <ul id="budget-list" class="left-align collection">
                 <li class="collection-item hoverable">
                     <div class="row">
-                        <div class="col s6">
-                            <h4 class="title"><i class="large material-icons icon-green left">trending_up</i>January</h4>
-                            <p>1/1/2017 - 1/31/2017</p>
-                        </div>
-                        <!--<div class="col s3 offset-s3">-->
-                            <!--<h6> -->
-                                <!--<br>-->
-                                <!--Budget limit: <span class="right">&plus;&nbsp;$<span id="limit">1000</span></span>-->
-                                <!--<br>-->
-                                <!--Money spent: <span class="right">&minus;&nbsp;$<span id="spent">0</span></span>-->
-                                <!--<hr>-->
-                                <!--Savings: <span class="right">&plus;&nbsp;$<span id="savings">1000</span></span>-->
-                            <!--</h6>-->
-                        <!--</div>-->
-                    </div>
-                    <div class="row">
-                        <label for="rent-progress">Rent: $<span>500</span></label>
+                        <label for="rent-progress">Grading Progress: <span>500</span></label>
                         <div id="rent-progress" class="green lighten-3 progress">
                             <div class="green determinate" style="width: 100%;"></div>
                         </div>
-                        <label class="left">$<span>0</span></label>
-                        <label class="right">$<span>500</span></label>
-                    </div>
-                    <div class="row">
-                        <label for="food-progress">Food: $<span>100</span></label>
-                        <div id="food-progress" class="green lighten-3 progress">
-                            <div class="green determinate" style="width: 100%;"></div>
-                        </div>
-                        <label class="left">$<span>0</span></label>
-                        <label class="right">$<span>100</span></label>
-                    </div>
-                    <div class="row">
-                        <label for="recreation-progress">Recreation: $<span>100</span></label>
-                        <div id="recreation-progress" class="green lighten-3 progress">
-                            <div class="green determinate" style="width: 100%;"></div>
-                        </div>
-                        <label class="left">$<span>0</span></label>
-                        <label class="right">$<span>100</span></label>
-                    </div>
-                    <div class="row">
-                        <label for="total-progress">Total: $<span>1000</span></label>
-                        <div id="total-progress" class="green lighten-3 progress">
-                            <div class="green determinate" style="width: 100%;"></div>
-                        </div>
-                        <label class="left">$<span>0</span></label>
-                        <label class="right">$<span>1000</span></label>
+                        <label class="left"><span>0</span></label>
+                        <label class="right"><span>500</span></label>
                     </div>
                 </li>
             </ul>
-        </div>
-        <div class="row">
-            <form id="new-expenditure-form">
-                <div class="input-field col s4">
-                    <select id="new-expenditure-category">
-                        <option value="" disabled selected>Category</option>
-                        <option value="rent">Rent</option>
-                        <option value="food">Food</option>
-                        <option value="recreation">Recreation</option>
-                    </select>
-                </div>
-                <div class="input-field col s4">
-                    <i class="material-icons prefix">attach_money</i>
-                    <input id="new-expenditure" type="number" placeholder="New Expenditure"/>
-                </div>
-                <div class="input-field col s4 right-align">
-                    <button type="submit" class="waves-effect waves-light btn">Log Expenses</button>
-                </div>
-            </form>
-        </div>
-        <div class="row center-align">
-            <a class="waves-effect waves-light btn"><i class="material-icons left">add</i>Create a budget</a>
         </div>
 </body>
