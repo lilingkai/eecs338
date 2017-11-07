@@ -6,6 +6,59 @@
     <script src="../js/grading.js"></script>
 </head>
 <body>
+    <style>
+        #wrapper {
+            overflow: hidden;
+            width: 400px;
+        }
+        
+        #slidecontainer {
+            width: 50%;
+            margin-top: 25px;
+            float: left;
+        }
+        
+        #valuecontainer {
+            margin-top: 21px;
+            float: right;
+            margin-right: 180px;
+            overflow: hidden;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 15px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+    </style>
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
@@ -23,71 +76,90 @@
         </div>
             <div class="divider"></div>
             <div class="row">
-                <div class="col s6"></div>
+                <div class="col s6">
+                    <img src="paper.png" width="600px">
+                </div>
                 <div class="col s6">
                     <div class="input-field col s4 offset-s4 left-align">
-                        <input id="budget-limit" type="number">
                         <label for="budget-limit">Criterion 1</label>
+                        <div id="wrapper">
+                            <div id="slidecontainer">
+                                <input type="range" min="0" max="10" value="5" class="slider" id="myRange1">
+                            </div>
+                            <div id="valuecontainer">
+                                <p><span id="demo1"></span></p>
+                            </div>
+                        </div>
                     </div>
                     <div class="input-field col s4 offset-s4 left-align">
-                        <input id="budget-limit" type="number">
                         <label for="budget-limit">Criterion 2</label>
+                        <div id="wrapper">
+                            <div id="slidecontainer">
+                                <input type="range" min="0" max="10" value="5" class="slider" id="myRange2">
+                            </div>
+                            <div id="valuecontainer">
+                                <p><span id="demo2"></span></p>
+                            </div>
+                        </div>
                     </div>
                     <div class="input-field col s4 offset-s4 left-align">
-                        <input id="budget-limit" type="number">
                         <label for="budget-limit">Criterion 3</label>
+                        <div id="wrapper">
+                            <div id="slidecontainer">
+                                <input type="range" min="0" max="10" value="5" class="slider" id="myRange3">
+                            </div>
+                            <div id="valuecontainer">
+                                <p><span id="demo3"></span></p>
+                            </div>
+                        </div>
                     </div>
                     <div class="input-field col s4 offset-s4 left-align">
-                        <input id="budget-limit" type="number">
                         <label for="budget-limit">Criterion 4</label>
+                        <div id="wrapper">
+                            <div id="slidecontainer">
+                                <input type="range" min="0" max="10" value="5" class="slider" id="myRange4">
+                            </div>
+                            <div id="valuecontainer">
+                                <p><span id="demo4"></span></p>
+                            </div>
+                        </div>
                     </div>
                     <div class="input-field col s4 offset-s4 left-align">
-                        <input id="budget-limit" type="number">
                         <label for="budget-limit">Criterion 5</label>
+                        <div id="wrapper">
+                            <div id="slidecontainer">
+                                <input type="range" min="0" max="10" value="5" class="slider" id="myRange5">
+                            </div>
+                            <div id="valuecontainer">
+                                <p><span id="demo5"></span></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <table class="highlight">
-                <thead>
-                    <tr>
-                        <th data-field="id">Category</th>
-                        <th data-field="name">Name</th>
-                        <th data-field="price">Amount</th>
-                        <th></th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr class="entry">
-                        <td>
-                            <select>
-                                <option value="" disabled selected>Category</option>
-                                <option value="rent">Rent</option>
-                                <option value="food">Food</option>
-                                <option value="recreation">Recreation</option>
-                            </select>
-                        </td>
-                        <td>
-                            <input name="name" type="text" placeholder="Name" />
-                        </td>
-                        <td>
-                            <input name="amount" type="number" placeholder="Amount" />
-                        </td>
-                        <td>
-                            <button class="btn btn-flat waves-effect waves-light transparent save"><i class="material-icons positive" type="submit">check</i></button>
-                            <button class="btn btn-flat waves-effect waves-light transparent delete" type="submit"><i class="material-icons negative">delete</i></button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="row">
-                <a id="add" class="waves-effect waves-light btn"><i class="material-icons left">add</i>Add Item</a>
+            <div align="center">
+                <a id="cancel" href="home.html" class="waves-effect waves-light btn"><i class="material-icons left"></i>Previous Paper</a>
+                <a id="cancel" href="home.html" class="waves-effect waves-light btn"><i class="material-icons left"></i>Next Paper</a>
+                <a id="submit" href="home2.html" class="waves-effect waves-light btn">Submit Grade</a>
             </div>
-            <div class="row right-align">
-                <a id="submit" href="home2.html" class="waves-effect waves-light btn">Submit budget</a>
-                <a id="cancel" href="home.html" class="waves-effect waves-light btn grey"><i class="material-icons left"></i>Cancel</a>
-            </div>
-        </div>
     </div>
+    <br>
+    <br>
+    <br>
+
+    <script>        
+        for(var i = 1; i <= 5; i++){
+            var slider = document.getElementById("myRange" + i);
+            var output = document.getElementById("demo" + i);
+            
+            output.innerHTML = slider.value;
+
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            }
+        }
+    </script>
+
 </body>
+
