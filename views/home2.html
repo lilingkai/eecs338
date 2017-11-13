@@ -2,6 +2,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="../index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.js"></script>
     <script src="../js/home2.js"></script>
 </head>
@@ -22,18 +23,18 @@
             <h3>Current Progress</h3>
             <div class="divider"></div>
             <br></br>
-            <a href="grading.html" class="waves-effect waves-light btn">Next Paper</a>
+            <a id="next" href="grading.html" class="waves-effect waves-light btn">Next Paper</a>
             <a href="previous.html" class="waves-effect waves-light btn">Previously Graded</a>
             <a class="waves-effect waves-light btn">Contact Professor</a>
             <ul id="budget-list" class="left-align collection">
                 <li class="collection-item hoverable">
                     <div class="row">
-                        <label for="rent-progress">Grading Progress: <span>500</span></label>
-                        <div id="rent-progress" class="green lighten-3 progress">
-                            <div class="green determinate" style="width: 100%;"></div>
+                        <label for="progress">Grading Progress: <span>0</span></label>
+                        <div id="progress" class="green lighten-3 progress">
+                            <div class="green determinate" style="width: 0%;"></div>
                         </div>
                         <label class="left"><span>0</span></label>
-                        <label class="right"><span>500</span></label>
+                        <label class="right"><span>100</span></label>
                     </div>
                 </li>
             </ul>
