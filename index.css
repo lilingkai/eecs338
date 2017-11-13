@@ -1,8 +1,8 @@
 .head-picture {
 	background-image: 	linear-gradient(
 							rgba(0, 0, 0, 0.3),
-							rgba(0, 0, 0, 0.3)), 
-							url("assets/images/banner.jpg");
+							rgba(0, 0, 0, 0.3)),
+							url("assets/images/banner1.jpg");
 	background-size:	cover;
 	background-repeat:	no-repeat;
 	background-position:	center center;
