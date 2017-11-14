@@ -1,0 +1,42 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.js"></script>
+    <script src="../js/home2.js"></script>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="../index.html" class="brand-logo"><img src="../assets/images/pen.png" alt="" class="logo"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../index.html"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href=""><i class="material-icons left">person</i>Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row center-align">
+            <h3>Current Progress</h3>
+            <div class="divider"></div>
+            <br></br>
+            <a id="next" href="grading.html" class="waves-effect waves-light btn">Next Paper</a>
+            <a href="previous.html" class="waves-effect waves-light btn">Previously Graded</a>
+            <a class="waves-effect waves-light btn" href="mailto:professor@u.northwestern.edu">Contact Professor</a>
+            <ul id="budget-list" class="left-align collection">
+                <li class="collection-item hoverable">
+                    <div class="row">
+                        <label for="progress">Grading Progress: <span>0</span></label>
+                        <div id="progress" class="green lighten-3 progress">
+                            <div class="green determinate" style="width: 0%;"></div>
+                        </div>
+                        <label class="left"><span>0</span></label>
+                        <label class="right"><span>100</span></label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+</body>
