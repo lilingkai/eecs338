@@ -18,39 +18,39 @@
         </nav>
     </div>
     <div class="row center-aligned">
-    <h1> Previously Graded Papers </h1>
+    <h1 id="a"> Previously Graded Papers </h1>
     </div>
     <ul class="collection">
       <li class="collection-item">
-        <a class="waves-effect waves-light btn" style="margin-right:20px;">Paper 1</a>
+        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="grading.html" id="paper-1">Paper 1</a>
         <p style="display:inline;font-style:italic;">Additional Notes for Context/Reminder</p>
       </li>
       <li class="collection-item">
-        <a class="waves-effect waves-light btn" style="margin-right:20px;">Paper 2</a>
+        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="grading.html" id="paper-2">Paper 2</a>
         <p style="display:inline;font-style:italic;">Additional Notes for Context/Reminder</p>
       </li>
       <li class="collection-item">
-        <a class="waves-effect waves-light btn" style="margin-right:20px;">Paper 3</a>
+        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="grading.html" id="paper-3">Paper 3</a>
         <p style="display:inline;font-style:italic;">Additional Notes for Context/Reminder</p>
       </li>
       <li class="collection-item">
-        <a class="waves-effect waves-light btn" style="margin-right:20px;">Paper 4</a>
+        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="grading.html" id="paper-4">Paper 4</a>
         <p style="display:inline;font-style:italic;">Additional Notes for Context/Reminder</p>
       </li>
       <li class="collection-item">
-        <a class="waves-effect waves-light btn" style="margin-right:20px;">Paper 5</a>
+        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="grading.html" id="paper-5">Paper 5</a>
         <p style="display:inline;font-style:italic;">Additional Notes for Context/Reminder</p>
       </li>
       <li class="collection-item">
-        <a class="waves-effect waves-light btn" style="margin-right:20px;">Paper 6</a>
+        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="grading.html" id="paper-6">Paper 6</a>
         <p style="display:inline;font-style:italic;">Additional Notes for Context/Reminder</p>
       </li>
       <li class="collection-item">
-        <a class="waves-effect waves-light btn" style="margin-right:20px;">Paper 7</a>
+        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="grading.html" id="paper-7">Paper 7</a>
         <p style="display:inline;font-style:italic;">Additional Notes for Context/Reminder</p>
       </li>
       <li class="collection-item">
-        <a class="waves-effect waves-light btn" style="margin-right:20px;">Paper 8</a>
+        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="grading.html" id="paper-8">Paper 8</a>
         <p style="display:inline;font-style:italic;">Additional Notes for Context/Reminder</p>
       </li>
       <li class="collection-item">
@@ -58,4 +58,28 @@
       </li>
 
     </ul>
+
+    <!--<div id="result"></div>-->
+
+    <script>
+
+    // if (typeof(Storage) !== "undefined") {
+    // // Store
+    // localStorage.setItem("lastname", "Smith");
+    // // Retrieve
+    // document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+    // } else {
+    //   document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+    // }
+
+    for (var i=0; i<9; i++) {
+      var paper = document.getElementById("paper-" + i);
+      if (paper != null) {
+        paper.onclick = function(e) {
+          localStorage.setItem("papernumber", e.target.id.substring(6));
+        }
+      }
+    }
+
+    </script>
 </body>
