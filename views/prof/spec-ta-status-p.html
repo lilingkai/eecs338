@@ -1,0 +1,133 @@
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.js"></script>
+    <script src="../../js/specific-assignment-status.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="../../index.html" class="brand-logo"><img src="../../assets/images/pen.png" alt="" class="logo"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../../index.html"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href=""><i class="material-icons left">person</i>Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row center-align">
+            <h3>TA1 - Midterm Papers - Class 101</h3>
+            <div class="divider"></div>
+            <br>
+            <h5>Grading Progress</h5>
+            
+            
+            <div class="row">
+                <div class="col s6">
+                    <ul id="budget-list" class="left-align collection">
+                        <li class="collection-item hoverable">
+                            <div class="row">
+                                <label for="progress">Grading Progress: <span>22</span>%</label>
+                                <div id="progress" class="green lighten-3 progress">
+                                <div class="green determinate" style="width: 22%;"></div>
+                            </div>
+                            <label class="left"><span>0</span></label>
+                            <label class="right"><span>100</span></label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s6">
+                    <a href="spec-ta-assigned-papers-p.html" class="waves-effect waves-light btn divbtn">Assigned Papers</a>
+                    <a href="mailto:professor@u.northwestern.edu" class="waves-effect waves-light btn divbtn">Contact TA1</a>
+                </div>
+            </div>
+            
+            <div class="graphs">
+                <div class="grow">
+                    <div class="g1">
+                        <canvas id="myChart1"></canvas>
+                    </div>
+                    <div class="g2">
+                        <canvas id="myChart2"></canvas>
+                    </div>
+                    <div class="g3">
+                        <canvas id="myChart3"></canvas>
+                    </div>
+                    <div class="g4">
+                        <canvas id="myChart4"></canvas>
+                    </div>
+                    <div class="g5">
+                        <canvas id="myChart5"></canvas>
+                    </div>
+                </div>
+                
+                <div class="grow">
+                    <div class="g1">
+                        <canvas id="myChart6"></canvas>
+                    </div>
+                    <div class="g2">
+                        <canvas id="myChart7"></canvas>
+                    </div>
+                    <div class="g3">
+                        <canvas id="myChart8"></canvas>
+                    </div>
+                    <div class="g4">
+                        <canvas id="myChart9"></canvas>
+                    </div>
+                    <div class="g5">
+                        <canvas id="myChart10"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        h5 {
+            text-align: left;
+        }
+        
+        .divbtn {
+            margin-top: 40px;
+            margin-right: 40px;
+        }
+        
+        .graphs {
+            width:700px;
+            display: table;
+            margin-bottom: 100px;
+        }
+        .grow {
+            display:table-row;
+            height: 200px;
+        }
+        .g1 {
+            width:20%;
+            display: table-cell;
+        }
+        .g2 {
+            width:20%;
+            display: table-cell;
+        }
+        .g3 {
+            width:2%;
+            display: table-cell;
+        }
+        .g4 {
+            width:20%;
+            display: table-cell;
+        }
+        .g5 {
+            width:20%;
+            display: table-cell;
+        }
+        
+    </style>
+</body>

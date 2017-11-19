@@ -1,15 +1,15 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../../index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.js"></script>
-    <script src="../js/home.js"></script>
+    <script src="../../js/home.js"></script>
 </head>
 <body>
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
-                <a href="../index.html" class="brand-logo"><img src="../assets/images/pen.png" alt="" class="logo"></a>
+                <a href="../../index.html" class="brand-logo"><img src="../../assets/images/pen.png" alt="" class="logo"></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="../index.html"><i class="material-icons left">home</i>Home</a></li>
                     <li><a href=""><i class="material-icons left">person</i>Profile</a></li>
@@ -21,11 +21,109 @@
         <div class="row center-align">
             <h1>Welcome Professor!</h1>
             <div class="divider"></div>
-            <p>
-                Assignments in Progress
-            </p>
-            <br></br>
-            <a href="home2.html" class="waves-effect waves-light btn">Class 101</a>
+            
+            <h4 class="assign-header">Assignments in Progress</h4>
+            
+            <div class="one-container">
+                <input id="toggle" type="checkbox" checked>
+                <label for="toggle"><p class="label101">Class 101</p></label>
+                <div id="expand">
+                    <section>
+                        <a href="assignment-status-p.html"><i>Midterm Papers</i></a>
+                    </section>
+                </div>
+            </div>
+            
+            <div class="toggle-container">
+                <label id="toggle">Class 301</label>
+            </div>
+            
+            <div class="toggle-container">
+                <label id="toggle">Seminar XYZ</label>
+            </div>
+            
+            <br>
+            
+            <h4 class="assign-header">Past Assignments</h4>
+            
+            <div class="toggle-container">
+                <label id="toggle">Class 401</label>
+            </div>
+            
+            <div class="toggle-container">
+                <label id="toggle">Seminar ABC</label>
+            </div>
         </div>
     </div>
+    
+    <style>
+        .assign-header {
+            text-align: left;
+        }
+        
+        .one-container {
+            text-align: left;
+            margin-bottom: 40px;
+            
+        }
+        
+        .toggle-container #toggle {
+            background-color: antiquewhite;
+            width: 150px;
+        }
+        
+        .label101 {
+            font-size: 20px;
+            background-color: antiquewhite;
+            margin-left: -35px;
+            padding: 0.5em;
+            margin-bottom: 40px;
+            width: 150px;
+        }
+        
+        .toggle-container {
+            margin-top: 40px;
+            text-align: left;
+            font-size: 20px;
+        }
+        
+        input {
+            display: none;
+            visibility: hidden;
+        }
+        
+        label {
+            display: block;
+            padding: 0.5em;
+            color: #666;
+            font-size: 20px;
+            text-align: left;
+        }
+        
+        label:hover {
+            color: #000;
+        }
+        
+        label::before {
+            display: none;
+        }
+        
+        #expand {
+            height: 0px;
+            overflow: hidden;
+            transition: height 0.5s;
+            color: #FFF;
+        }
+        
+        section {
+            margin-top: 60px;
+            margin-bottom: 10px;
+            padding: 0 20px;
+        }
+        
+        #toggle:checked ~ #expand {
+            height: 90px;
+        }
+        
+    </style>
 </body>
