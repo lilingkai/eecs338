@@ -1,6 +1,6 @@
 (function() {
     $(function() {
-        if(typeof(Storage) !== "undefined" && document.referrer !== "http://kevinwli.com/eecs338/views/previous.html") {
+        if(typeof(Storage) !== "undefined" && document.referrer == "http://kevinwli.com/eecs338/views/home2.html") {
             if (sessionStorage.progress) {
                 $('#number > span').text(Number(sessionStorage.progress) + 1);
             }
