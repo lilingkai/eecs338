@@ -71,7 +71,7 @@
     </div>
     <div class="container">
         <div class="row center-align">
-            <h1 id="number">Paper <span>1</span></h1>
+            <h1 id="number">Paper <span id="papernum">1</span></h1>
         </div>
             <div class="divider"></div>
             <div class="row">
@@ -192,8 +192,17 @@
         }
 
         var oldURL = document.referrer;
-        document.write("oldURL: " + oldURL + "<br>");
-        document.write(11);
+        //document.write("oldURL: " + oldURL + "<br>");
+        var papernum = document.getElementById("papernum");
+
+        // if (oldURL == "http://kevinwli.com/eecs338/views/") {
+        //   document.write("testing");
+        // }
+
+        if (oldURL == "http://kevinwli.com/eecs338/views/previous.html") {
+          papernum.innerHTML = localStorage.getItem("papernumber");
+        }
+
     </script>
 
 </body>

@@ -1,6 +1,6 @@
 (function() {
     $(function() {
-        if(typeof(Storage) !== "undefined") {
+        if(typeof(Storage) !== "undefined" && oldURL !== "http://kevinwli.com/eecs338/views/previous.html") {
             if (sessionStorage.progress) {
                 $('#number > span').text(Number(sessionStorage.progress) + 1);
             }
