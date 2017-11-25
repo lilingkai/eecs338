@@ -3,7 +3,6 @@
 
         var slider1 = document.getElementById("myRange1");
         var output1 = document.getElementById("demo1");
-
         output1.innerHTML = slider1.value;
 
         slider1.oninput = function() {
@@ -102,10 +101,30 @@
                     sessionStorage.setItem("pdata", JSON.stringify(storedData));
                 } else {
                     console.log("hello");
-                    var pdata = []
+                    var pdata = [];
                     pdata[0] = paperdata;
                     sessionStorage.setItem("pdata", JSON.stringify(pdata));
                 }
+                
+                // Store averages
+                var avgcount = Math.ceil(sessionStorage.progress / 10.0);
+                var avgname = "Avg" + avgcount.toString();
+                var grade = parseInt(paperdata[1])+parseInt(paperdata[2])+parseInt(paperdata[3])+parseInt(paperdata[4])+parseInt(paperdata[5]);
+                if (sessionStorage.getItem(avgname) === null) {
+                    sessionStorage.setItem(avgname, grade);
+                }
+                else {
+                    if (sessionStorage.progress % 10 == 0) {
+                        sessionStorage.setItem(avgname, (parseFloat(sessionStorage.getItem(avgname))*9+parseInt(grade))/10); 
+                    }
+                    else {
+                        sessionStorage.setItem(avgname, (parseFloat(sessionStorage.getItem(avgname))*(sessionStorage.progress%10-1)+parseInt(grade))/(sessionStorage.progress%10)); 
+                    }   
+                }
+                console.log(sessionStorage.progress);
+                console.log(sessionStorage.getItem("Avg1"));
+                console.log(sessionStorage.getItem("Avg2"));
+                
             }
         });
     });
