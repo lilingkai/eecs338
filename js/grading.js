@@ -96,10 +96,12 @@
                 if (sessionStorage.pdata) {
                     var storedData = JSON.parse(sessionStorage.getItem("pdata"));
                     var index = Number($('#number > span').text()) - 1;
+                    console.log(index);
                     storedData[index] = paperdata;
                     console.log(storedData);
-                    sessionStorage.setItem("pdata", JSON.stringify(pdata));
+                    sessionStorage.setItem("pdata", JSON.stringify(storedData));
                 } else {
+                    console.log("hello");
                     var pdata = []
                     pdata[0] = paperdata;
                     sessionStorage.setItem("pdata", JSON.stringify(pdata));
