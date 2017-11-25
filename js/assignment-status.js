@@ -90,7 +90,8 @@ window.onload = function () {
             scales: {
                 yAxes: [{
                     ticks: {
-                        beginAtZero:true
+                        beginAtZero:true,
+                        max: 100
                     }
                 }]
             }
