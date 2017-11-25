@@ -52,7 +52,7 @@
         var papernum = document.getElementById("papernum");        
         if (oldURL == "http://kevinwli.com/eecs338/views/previous.html") {
             var storedData = JSON.parse(sessionStorage.getItem("pdata"));
-            var index = Number($('#number > span').text()) - 1;
+            var index = localStorage.getItem("papernumber") - 1;
 
             papernum.innerHTML = storedData[index][0];
             output1.innerHTML = storedData[index][1];
