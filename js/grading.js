@@ -98,7 +98,7 @@
                     var index = Number($('#number > span').text()) - 1;
                     storedData[index] = paperdata;
                     console.log(storedData);
-                    sessionStorage.setItem("padata", JSON.stringify(pdata));
+                    sessionStorage.setItem("pdata", JSON.stringify(pdata));
                 } else {
                     var pdata = []
                     pdata[0] = paperdata;
