@@ -52,9 +52,9 @@
         var papernum = document.getElementById("papernum");        
         if (oldURL == "http://kevinwli.com/eecs338/views/previous.html") {
             var storedData = JSON.parse(sessionStorage.getItem("pdata"));
+            console.log(storedData);
             var index = localStorage.getItem("papernumber") - 1;
             $('#number > span').text(index);
-            console.log(index);
             papernum.innerHTML = storedData[index][0];
             output1.innerHTML = storedData[index][1];
             output2.innerHTML = storedData[index][2];
