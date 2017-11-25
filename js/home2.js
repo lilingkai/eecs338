@@ -19,7 +19,6 @@
 
         var $progressBarBackground = $('#progress.progress');
         var $progressBar = $progressBarBackground.find('.determinate');
-        console.log($progressBar)
         $progressBar.css('width',  current + '%');
     }
 }());
