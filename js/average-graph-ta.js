@@ -33,13 +33,13 @@ window.onload = function () {
           var previous = parseFloat(sessionStorage.getItem("Avg"+(i-1).toString()));
           if (Math.abs((current-previous)/previous*100) >= 10 && current-previous > 0) {
             alert.innerHTML = "Alert: The average grade you have assigned to the\
-             last 10 percentile of papers are 10% higher than the pervious 10 percentile!\
+             last 10 percentile of papers is 10% higher than the pervious 10 percentile!\
               Review these previous papers to see if your grading standards have\
                changed over time!";
           }
           else {
             alert.innerHTML = "Alert: The average grade you have assigned to the\
-             last 10 percentile of papers are 10% lower than the pervious 10 percentile!\
+             last 10 percentile of papers is 10% lower than the pervious 10 percentile!\
               Review these previous papers to see if your grading standards have\
                changed over time!";
           }

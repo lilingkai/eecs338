@@ -9,9 +9,9 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
-                <a href="../index.html" class="brand-logo"><img src="../assets/images/pen.png" alt="" class="logo"></a>
+                <a href="../../index.html" class="brand-logo"><img src="../assets/images/pen.png" alt="" class="logo"></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="../index.html"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="../../index.html"><i class="material-icons left">home</i>Home</a></li>
                     <li><a href=""><i class="material-icons left">person</i>Profile</a></li>
                 </ul>
             </div>
@@ -27,27 +27,27 @@
         <p style="display:inline;">8.5</p>
       </li>
       <li class="collection-item">
-        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="prof-grading.html" id="paper-1">Student B1 Paper</a>
+        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="prof-grading.html" id="paper-2">Student B1 Paper</a>
         <p style="display:inline;">-- --</p>
       </li>
       <li class="collection-item">
-        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="prof-grading.html" id="paper-1">Student C1 Paper</a>
+        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="prof-grading.html" id="paper-3">Student C1 Paper</a>
         <p style="display:inline;">6.1</p>
       </li>
       <li class="collection-item">
-        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="prof-grading.html" id="paper-1">Student D1 Paper</a>
+        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="prof-grading.html" id="paper-4">Student D1 Paper</a>
         <p style="display:inline;">7.0</p>
       </li>
       <li class="collection-item">
-        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="prof-grading.html" id="paper-1">Student E1 Paper</a>
+        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="prof-grading.html" id="paper-5">Student E1 Paper</a>
         <p style="display:inline;">-- --</p>
       </li>
       <li class="collection-item">
-        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="prof-grading.html" id="paper-1">Student F1 Paper</a>
+        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="prof-grading.html" id="paper-6">Student F1 Paper</a>
         <p style="display:inline;">-- --</p>
       </li>
       <li class="collection-item">
-        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="prof-grading.html" id="paper-1">Student G1 Paper</a>
+        <a class="waves-effect waves-light btn" style="margin-right:20px;" href="prof-grading.html" id="paper-7">Student G1 Paper</a>
         <p style="display:inline;">-- --</p>
       </li>
       <li class="collection-item">
@@ -61,7 +61,7 @@
       var paper = document.getElementById("paper-" + i);
       if (paper != null) {
         paper.onclick = function(e) {
-          localStorage.setItem("papernumber-prof", e.target.id.substring(6,8));
+          localStorage.setItem("papernumberprof", e.target.id.substring(8,10));
         }
       }
     }
