@@ -61,7 +61,7 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
-                <a href="../../index.html" class="brand-logo"><img src="../assets/images/pen.png" alt="" class="logo"></a>
+                <a href="../../index.html" class="brand-logo"><img src="../../assets/images/pen.png" alt="" class="logo"></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="../../index.html"><i class="material-icons left">home</i>Home</a></li>
                     <li><a href=""><i class="material-icons left">person</i>Profile</a></li>
@@ -71,7 +71,7 @@
     </div>
     <div class="container">
         <div class="row center-align">
-            <h1 id="number">Paper <span id="papernum">1</span></h1>
+            <h1>Paper <span id="pnum">A1</span></h1>
             <h5 style="float:left;color:blue;"> Viewing as TA1 </h5>
         </div>
             <div class="divider"></div>
@@ -147,10 +147,8 @@
     <br>
 
     <script>
-
-    var papernum = document.getElementById("papernum");
-    papernum.innerHTML = localStorage.getItem("papernumberprof");
-
+    var pnum = document.getElementById("pnum");
+    pnum.innerHTML = localStorage.getItem("pnum");
     </script>
 
 </body>
