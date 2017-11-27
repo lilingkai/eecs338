@@ -1,0 +1,157 @@
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/grading.js"></script>
+</head>
+<body>
+    <style>
+        #wrapper {
+            overflow: hidden;
+            width: 400px;
+        }
+
+        #slidecontainer {
+            width: 50%;
+            margin-top: 25px;
+            float: left;
+        }
+
+        #valuecontainer {
+            margin-top: 21px;
+            float: right;
+            margin-right: 180px;
+            overflow: hidden;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 15px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+    </style>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="../index.html" class="brand-logo"><img src="../assets/images/pen.png" alt="" class="logo"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../index.html"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href=""><i class="material-icons left">person</i>Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row center-align">
+            <h1 id="number">Paper <span id="papernum">1</span></h1>
+            <h5 style="float:left;color:blue;"> Viewing as TA1 </h5>
+        </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col s6">
+                    <img src="../paper.png" width="600px">
+                </div>
+                <div class="col s6">
+                    <div class="input-field col s4 offset-s4 left-align">
+                        <label for="budget-limit">Criterion 1</label>
+                        <div id="wrapper">
+                            <div id="slidecontainer">
+                                <input type="range" min="0" max="10" value="5" class="slider" id="myRange1">
+                            </div>
+                            <div id="valuecontainer">
+                                <p><span id="demo1"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-field col s4 offset-s4 left-align">
+                        <label for="budget-limit">Criterion 2</label>
+                        <div id="wrapper">
+                            <div id="slidecontainer">
+                                <input type="range" min="0" max="10" value="5" class="slider" id="myRange2">
+                            </div>
+                            <div id="valuecontainer">
+                                <p><span id="demo2"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-field col s4 offset-s4 left-align">
+                        <label for="budget-limit">Criterion 3</label>
+                        <div id="wrapper">
+                            <div id="slidecontainer">
+                                <input type="range" min="0" max="10" value="5" class="slider" id="myRange3">
+                            </div>
+                            <div id="valuecontainer">
+                                <p><span id="demo3"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-field col s4 offset-s4 left-align">
+                        <label for="budget-limit">Criterion 4</label>
+                        <div id="wrapper">
+                            <div id="slidecontainer">
+                                <input type="range" min="0" max="10" value="5" class="slider" id="myRange4">
+                            </div>
+                            <div id="valuecontainer">
+                                <p><span id="demo4"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-field col s4 offset-s4 left-align">
+                        <label for="budget-limit">Criterion 5</label>
+                        <div id="wrapper">
+                            <div id="slidecontainer">
+                                <input type="range" min="0" max="10" value="5" class="slider" id="myRange5">
+                            </div>
+                            <div id="valuecontainer">
+                                <p><span id="demo5"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div align="center">
+                <a id="submit" href="home2.html" class="waves-effect waves-light btn">Submit Grade</a>
+            </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <script>
+
+    var papernum = document.getElementById("papernum");
+    papernum.innerHTML = localStorage.getItem("papernumber-prof");
+
+    </script>
+
+</body>
