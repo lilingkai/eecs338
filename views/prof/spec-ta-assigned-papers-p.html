@@ -61,7 +61,7 @@
       var paper = document.getElementById("paper-" + i);
       if (paper != null) {
         paper.onclick = function(e) {
-          localStorage.setItem("papernumberprof", e.target.id.substring(8,10));
+          localStorage.setItem("papernumberprof", e.target.id.substring(8)+"1");
         }
       }
     }
