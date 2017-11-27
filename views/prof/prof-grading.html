@@ -140,7 +140,7 @@
             </div>
 
             <div align="center">
-                <a id="submit" href="spec-ta-assigned-papers-p.html.html" class="waves-effect waves-light btn">Submit Grade</a>
+                <a id="submit" href="spec-ta-assigned-papers-p.html" class="waves-effect waves-light btn">Submit Grade</a>
             </div>
     </div>
     <br>
@@ -150,9 +150,7 @@
     <script>
 
     var papernum = document.getElementById("papernum");
-    if (localStorage.getItem("papernumberprof")) {
-      papernum.innerHTML = localStorage.getItem("papernumberprof");
-    }
+    papernum.innerHTML = localStorage.getItem("papernumberprof");
 
     </script>
 
