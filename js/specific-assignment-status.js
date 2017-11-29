@@ -1,5 +1,6 @@
 window.onload = function () {
-    var numgraphs = 10;
+    var numgraphs = 5;
+    var titles = ["Focus/Main Point","Support","Organization/Format","Language Use/Style","Conventions"];
     
     for (i = 1; i <= numgraphs; i++) {
     
@@ -24,7 +25,7 @@ window.onload = function () {
             options: {
                 title: {
                     display: true,
-                    text: 'Criterion ' + i.toString()
+                    text: titles[i-1],
                 }
             }
         });
